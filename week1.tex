@@ -1,0 +1,44 @@
+\documentclass[]{article}
+\usepackage{graphicx}
+
+\parindent=0pt
+\usepackage[margin=0.5in]{geometry}
+\usepackage{url}
+
+\begin{document}
+\pagestyle{empty}
+{\large\textbf{Research Notes}}
+\begin{itemize}
+    \item[*] Created on Mon 04 Jan 2016 11:23:25 AM EST
+    \item[*] Modified on \today
+    \item[*] Author info: Boyou Zhou\\
+             8 St Mary's St, PHO 340, Boston, MA 02215\\
+             Email: bobzhou@bu.edu, Phone: 617-678-8480
+\end{itemize}
+
+
+\rule[-0.1cm]{7.5in}{0.01cm}\\
+\\
+\noindent \textbf{Mon 04 Jan 2016 11:14:43 AM EST}
+\textit{Beginner's tutorial of AXI slave logic design}
+
+This documents gives a brief instruction of how to design an AXI slave logic on
+Zedboard. Zedboard provides two ARM cores and programmable logic. From here, ps
+stands for GPP, ARM in this case, pl for programmable logic.\ 
+
+Ps and Pl are connected with AXI ports. In this design, our logic talks to the
+ps with AXI ports.\ ps looks at the logic as memory blocks. More strictly, the ps
+visit the logic registers as memory units. On the ps side, I used a full linux,
+Linaro Linux as the os for ps. The programs are run on the ps interfacing the
+memory units through AXI ports, $/dev/mem$
+
+Here are the tutorials to the design.
+\indent		\begin{itemize}
+            \item \textit{Start Linux} \url{http://fpga.org/2013/05/24/yet-another-guide-to-running-linaro-ubuntu-desktop-on-xilinx-zynq-on-the-zedboard/}
+			\item \textit{AXI Slave Logic} \url{http://www.fpgadeveloper.com/2014/08/creating-a-custom-ip-block-in-vivado.html}
+			\item \textit{Visit Memory Block} \url{http://fpga.org/2013/05/28/how-to-design-and-access-a-memory-mapped-device-part-one/}
+        \end{itemize}
+
+The device tree design, we do not include adv7511.dtsi in zynq-zed-adv7511.dtsi
+\end{document}
+
