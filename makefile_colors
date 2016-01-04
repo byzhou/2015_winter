@@ -1,0 +1,16 @@
+Font_Reset			:=\e[0m
+
+Font_Red			:=\e[31m
+Font_Green			:=\e[32m
+Font_Yellow			:=\e[33m
+Font_Blue			:=\e[34m
+Font_Cyan			:=\e[36m
+
+Font_Light_Yellow	:=\e[93m
+Font_Light_Green	:=\e[92m
+
+Font_Bold			:=\e[1m
+Font_Blink			:=\e[5m
+Font_Dim			:=\e[2m
+Font_Underline		:=\e[4m
+Font_Inverted		:=\e[7m

@@ -1,4 +1,4 @@
-include ~/makefile_colors
+include ./makefile_colors
 target :=	template.pdf
 
 %.pdf: %.tex 
