@@ -34,11 +34,46 @@ memory units through AXI ports, $/dev/mem$
 
 Here are the tutorials to the design.
 \indent		\begin{itemize}
-            \item \textit{Start Linux} \url{http://fpga.org/2013/05/24/yet-another-guide-to-running-linaro-ubuntu-desktop-on-xilinx-zynq-on-the-zedboard/}
-			\item \textit{AXI Slave Logic} \url{http://www.fpgadeveloper.com/2014/08/creating-a-custom-ip-block-in-vivado.html}
-			\item \textit{Visit Memory Block} \url{http://fpga.org/2013/05/28/how-to-design-and-access-a-memory-mapped-device-part-one/}
+			\item \textit{Start Linux}
+			\url{http://fpga.org/2013/05/24/yet-another-guide-to-running-linaro-ubuntu-desktop-on-xilinx-zynq-on-the-zedboard/}
+			\item \textit{AXI Slave Logic}
+			\url{http://www.fpgadeveloper.com/2014/08/creating-a-custom-ip-block-in-vivado.html}
+			\item \textit{Visit Memory Block}
+			\url{http://fpga.org/2013/05/28/how-to-design-and-access-a-memory-mapped-device-part-one/}
         \end{itemize}
 
 The device tree design, we do not include adv7511.dtsi in zynq-zed-adv7511.dtsi
+
+\noindent \textbf{Thu 07 Jan 2016 12:38:46 PM EST}
+\textit{Papers related to security}
+\begin{itemize}
+	\item side channel detection \cite{longo2015soc} 
+	\item encoding methods \cite{chakraborti2015trivia} 
+	\item radio security breach \cite{genkin2015stealing}
+	\item PUF \cite{aysu2015end} \cite{maes2015secure} \cite{herder2014physical} \cite{devadas2010secure}
+	\item SAT \cite{saha2015improved}
+	\item TRNG \cite{haddad2015physical}\cite{suh2007physical}\cite{herder2014trapdoor}
+	\item new tech \cite{suh2003efficient}
+	
+\\
+\rule[-0.1cm]{7.5in}{0.01cm}\\
+\\
+	\item coprocessor \cite{roy2015lightweight} 
+	\item break RSA on Intel chip \cite{bhattacharya2015watches}
+	\item accelerating homomorphic encryption \cite{doroz2015accelerating}
+	\item memory verification and encryption, verification ensures the
+adversary changes in the machine states. Encryption protects the off-chip
+memory\cite{suh2003efficient}
+
+\end{itemize}
+
+some explanation
+\begin{itemize}
+	\item \cite{herder2014trapdoor}TRNG: safely extract the keys from biometric source
+\end{itemize}
+
+
+\bibliography{week1}{}
+\bibliographystyle{plain}
 \end{document}
 
