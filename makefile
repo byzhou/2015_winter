@@ -14,7 +14,11 @@ target :=	week1.pdf
 all: $(target)
 
 view:
-	evince $(target) &
+	@if which mupdf > /dev/null; then\
+        mupdf week1.pdf &\
+    else\
+        evince week1.pdf &\
+    fi
 
 clean:
 	rm -rf *.aux *.log *.pdf 

@@ -1,0 +1,56 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A Physical Approach for Stochastic Modeling of TERO-based TRNG	week1.bib	/^  title={A Physical Approach for Stochastic Modeling of TERO-based TRNG},$/;"	t
+Accelerating LTV Based Homomorphic Encryption in Reconfigurable Hardware	week1.bib	/^  title={Accelerating LTV Based Homomorphic Encryption in Reconfigurable Hardware},$/;"	t
+Aysu, Aydin and Gulcan, Ege and Moriyama, Daisuke and Schaumont, Patrick and Yung, Moti	week1.bib	/^  author={Aysu, Aydin and Gulcan, Ege and Moriyama, Daisuke and Schaumont, Patrick and Yung, Moti},$/;"	a
+Bhattacharya, Sarani and Mukhopadhyay, Debdeep	week1.bib	/^  author={Bhattacharya, Sarani and Mukhopadhyay, Debdeep},$/;"	a
+Chakraborti, Avik and Chattopadhyay, Anupam and Hassan, Muhammad and Nandi, Mridul	week1.bib	/^  author={Chakraborti, Avik and Chattopadhyay, Anupam and Hassan, Muhammad and Nandi, Mridul},$/;"	a
+Chen, Tao and Rucker, Alexander and Suh, G Edward	week1.bib	/^  author={Chen, Tao and Rucker, Alexander and Suh, G Edward},$/;"	a
+Cryptographic Hardware and Embedded Systems--CHES 2015	week1.bib	/^  booktitle={Cryptographic Hardware and Embedded Systems--CHES 2015},$/;"	t
+Devadas, S and Yu, M	week1.bib	/^  author={Devadas, S and Yu, M},$/;"	a
+Efficient memory integrity verification and encryption for secure processors	week1.bib	/^  title={Efficient memory integrity verification and encryption for secure processors},$/;"	t
+End-to-end Design of a PUF-based Privacy Preserving Authentication Protocol	week1.bib	/^  title={End-to-end Design of a PUF-based Privacy Preserving Authentication Protocol},$/;"	t
+Execution time prediction for energy-efficient hardware accelerators	week1.bib	/^  title={Execution time prediction for energy-efficient hardware accelerators},$/;"	t
+Genkin, Daniel and Pachmanov, Lev and Pipman, Itamar and Tromer, Eran	week1.bib	/^  author={Genkin, Daniel and Pachmanov, Lev and Pipman, Itamar and Tromer, Eran},$/;"	a
+Haddad, Patrick and Fischer, Viktor and Bernard, Florent and Nicolai, Jean	week1.bib	/^  author={Haddad, Patrick and Fischer, Viktor and Bernard, Florent and Nicolai, Jean},$/;"	a
+Herder, Charles and Yu, Meng-Day and Koushanfar, Farinaz and Devadas, Srinivas	week1.bib	/^  author={Herder, Charles and Yu, Meng-Day and Koushanfar, Farinaz and Devadas, Srinivas},$/;"	a
+Improved Test Pattern Generation for Hardware Trojan Detection Using Genetic Algorithm and Boolean Satisfiability	week1.bib	/^  title={Improved Test Pattern Generation for Hardware Trojan Detection Using Genetic Algorithm and Boolean Satisfiability},$/;"	t
+Lightweight coprocessor for Koblitz curves: 283-bit ECC including scalar conversion with only 4300 gates	week1.bib	/^  title={Lightweight coprocessor for Koblitz curves: 283-bit ECC including scalar conversion with only 4300 gates},$/;"	t
+Longo, Jake and De Mulder, E and Page, D and Tunstall, M	week1.bib	/^  author={Longo, Jake and De Mulder, E and Page, D and Tunstall, M},$/;"	a
+Maes, Roel and van der Leest, Vincent and van der Sluis, Erik and Willems, Frans	week1.bib	/^  author={Maes, Roel and van der Leest, Vincent and van der Sluis, Erik and Willems, Frans},$/;"	a
+Physical unclonable functions and applications: A tutorial	week1.bib	/^  title={Physical unclonable functions and applications: A tutorial},$/;"	t
+Physical unclonable functions for device authentication and secret key generation	week1.bib	/^  title={Physical unclonable functions for device authentication and secret key generation},$/;"	t
+Proceedings of the 36th annual IEEE/ACM International Symposium on Microarchitecture	week1.bib	/^  booktitle={Proceedings of the 36th annual IEEE\/ACM International Symposium on Microarchitecture},$/;"	t
+Proceedings of the 44th annual Design Automation Conference	week1.bib	/^  booktitle={Proceedings of the 44th annual Design Automation Conference},$/;"	t
+Proceedings of the 48th International Symposium on Microarchitecture	week1.bib	/^  booktitle={Proceedings of the 48th International Symposium on Microarchitecture},$/;"	t
+Saha, Sayandeep and Chakraborty, Rajat Subhra and Nuthakki, Srinivasa Shashank and Mukhopadhyay, Debdeep and others	week1.bib	/^  author={Saha, Sayandeep and Chakraborty, Rajat Subhra and Nuthakki, Srinivasa Shashank and Mukhopadhyay, Debdeep and others},$/;"	a
+Secure and robust error correction for physical unclonable functions	week1.bib	/^  title={Secure and robust error correction for physical unclonable functions},$/;"	t
+Secure key generation from biased PUFs	week1.bib	/^  title={Secure key generation from biased PUFs},$/;"	t
+SoC it to EM: electromagnetic side-channel attacks on a complex system-on-chip	week1.bib	/^  title={SoC it to EM: electromagnetic side-channel attacks on a complex system-on-chip},$/;"	t
+Stealing keys from PCs by radio: Cheap electromagnetic attacks on windowed exponentiation	week1.bib	/^  title={Stealing keys from PCs by radio: Cheap electromagnetic attacks on windowed exponentiation},$/;"	t
+Suh, G Edward and Clarke, Dwaine and Gassend, Blaise and Dijk, Marten van and Devadas, Srinivas	week1.bib	/^  author={Suh, G Edward and Clarke, Dwaine and Gassend, Blaise and Dijk, Marten van and Devadas, Srinivas},$/;"	a
+Suh, G Edward and Devadas, Srinivas	week1.bib	/^  author={Suh, G Edward and Devadas, Srinivas},$/;"	a
+Trapdoor Computational Fuzzy Extractors	week1.bib	/^  title={Trapdoor Computational Fuzzy Extractors},$/;"	t
+TriviA: A Fast and Secure Authenticated Encryption Scheme	week1.bib	/^  title={TriviA: A Fast and Secure Authenticated Encryption Scheme},$/;"	t
+Who watches the watchmen?: Utilizing Performance Monitors for Compromising keys of RSA on Intel Platforms	week1.bib	/^  title={Who watches the watchmen?: Utilizing Performance Monitors for Compromising keys of RSA on Intel Platforms},$/;"	t
+aysu2015end	week1.bib	/^@incollection{aysu2015end,$/;"	e
+bhattacharya2015watches	week1.bib	/^@incollection{bhattacharya2015watches,$/;"	e
+chakraborti2015trivia	week1.bib	/^@incollection{chakraborti2015trivia,$/;"	e
+chen2015execution	week1.bib	/^@inproceedings{chen2015execution,$/;"	e
+devadas2010secure	week1.bib	/^@article{devadas2010secure,$/;"	e
+doroz2015accelerating	week1.bib	/^@incollection{doroz2015accelerating,$/;"	e
+genkin2015stealing	week1.bib	/^@techreport{genkin2015stealing,$/;"	e
+haddad2015physical	week1.bib	/^@incollection{haddad2015physical,$/;"	e
+herder2014physical	week1.bib	/^@article{herder2014physical,$/;"	e
+herder2014trapdoor	week1.bib	/^@techreport{herder2014trapdoor,$/;"	e
+longo2015soc	week1.bib	/^@incollection{longo2015soc,$/;"	e
+maes2015secure	week1.bib	/^@incollection{maes2015secure,$/;"	e
+roy2015lightweight	week1.bib	/^@incollection{roy2015lightweight,$/;"	e
+saha2015improved	week1.bib	/^@incollection{saha2015improved,$/;"	e
+suh2003efficient	week1.bib	/^@inproceedings{suh2003efficient,$/;"	e
+suh2007physical	week1.bib	/^@inproceedings{suh2007physical,$/;"	e
+target	makefile	/^target :=	week1.pdf$/;"	m
