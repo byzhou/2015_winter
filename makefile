@@ -12,6 +12,7 @@ endif
 %.pdf: %.tex %.blg
 	@echo -e '$(Font_Bold)$(Font_Yellow)Generating pdf file $@ from $<$(Font_Reset)'
 	pdflatex $<
+	pdflatex $<
 	@echo -e '$(Font_Bold)$(Font_Green)Finished building target $@'
 
 %.blg: %.bib
