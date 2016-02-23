@@ -21,4 +21,4 @@ view:
     fi
 
 clean:
-	rm -rf *.aux *.log *.pdf 
+	rm -rf *.aux *.log *.pdf *.log *.out
