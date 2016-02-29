@@ -96,7 +96,7 @@ In the homomorphic computation, somewhat homomorphic function evaluation needs t
 memory access. Thus the number of access in memory is the hamming distance of
 RSA keys.
 	\item \cite{ismail2015improving} 
-	\item \cite{ancajas2014fort} thread model: HTs attachs one of the cores and
+	\item \cite{ancajas2014fort} thread model: HTs attacks one of the cores and
 propagate information to other cores.  Defence model: Data scrambling as the
 first layer, dynamic packet certificate as the second layer, and node
 obfuscation on the third layer
@@ -107,6 +107,24 @@ obfuscation on the third layer
             \item deterministic processor pipeline against timing attacks
             \item
 
+        \end{itemize}
+\end{itemize}
+
+\rule[-0.1cm]{7.5in}{0.01cm}\\
+\noindent \textbf{Mon 22 Feb 2016 01:59:29 PM EST}
+\textit{papers on architecture security}
+\begin{itemize}
+    \item \cite{diguet2007noc} Threat models:
+        \begin{itemize}
+            \item a write access in the secure area to modify the system behavior
+            \item extraction of information
+            \item denial of service:
+                \begin{itemize}
+                    \item replay: wastes of bandwidth
+                    \item incorrect path: introduce erroneous paths
+                    \item deadlock: the use of packets with paths that intentionally create deadlocks
+                    \item livelock: introduce packets that can never reach the end so that they stay turning in the network
+                \end{itemize}
         \end{itemize}
 \end{itemize}
 
