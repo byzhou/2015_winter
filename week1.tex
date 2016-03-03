@@ -97,16 +97,17 @@ memory access. Thus the number of access in memory is the hamming distance of
 RSA keys.
 	\item \cite{ismail2015improving} 
 	\item \cite{ancajas2014fort} thread model: HTs attacks one of the cores and
-propagate information to other cores.  Defence model: Data scrambling as the
-first layer, dynamic packet certificate as the second layer, and node
-obfuscation on the third layer
+propagate information to other cores.  
+        \begin{itemize}
+            \item data scrambling
+            \item dynamic packet certificate
+            \item node obfuscation
+        \end{itemize}
     \item \cite{liu2015ghostrider} 
         \begin{itemize}
             \item split the memory into three types, normal memory, encrypted memory and oblivious memory
             \item use software-directed scratchpad instead of implicit cache access
             \item deterministic processor pipeline against timing attacks
-            \item
-
         \end{itemize}
 \end{itemize}
 
@@ -118,6 +119,10 @@ obfuscation on the third layer
         \begin{itemize}
             \item a write access in the secure area to modify the system behavior
             \item extraction of information
+                \begin{itemize}
+                    \item RSA fault injection\cite{pellegrini2010fault} 
+                    \item AES attack\cite{moradi2006generalized}
+                \end{itemize}
             \item denial of service:
                 \begin{itemize}
                     \item replay: wastes of bandwidth

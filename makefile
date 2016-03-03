@@ -9,16 +9,14 @@ else
 	view_target 	:= linux_view
 endif
 
-%.pdf: %.tex %.blg
+%.pdf: %.tex %.blg %.bib
 	@echo -e '$(Font_Bold)$(Font_Yellow)Generating pdf file $@ from $<$(Font_Reset)'
 	pdflatex $<
-	pdflatex $<
-	@echo -e '$(Font_Bold)$(Font_Green)Finished building target $@'
-
-%.blg: %.bib
 	@echo -e '$(Font_Bold)$(Font_Yellow)Generating bib file$(Font_Reset)'
 	bibtex week1
 	@echo -e '$(Font_Bold)$(Font_Green)Bibfile generated$(Font_Reset)'
+	pdflatex $<
+	@echo -e '$(Font_Bold)$(Font_Green)Finished building target $@'
 
 all: $(target)
 view:$(view_target)
