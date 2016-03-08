@@ -1,5 +1,6 @@
 \documentclass[]{article}
 \usepackage{graphicx}
+\usepackage{xcolor}
 
 \parindent=0pt
 \usepackage[margin=0.5in]{geometry}
@@ -118,10 +119,15 @@ propagate information to other cores.
     \item \cite{diguet2007noc} Threat models:
         \begin{itemize}
             \item a write access in the secure area to modify the system behavior
-            \item extraction of information
+            \item covert attacks
                 \begin{itemize}
-                    \item RSA fault injection\cite{pellegrini2010fault} 
-                    \item AES attack\cite{moradi2006generalized}
+                    \item extraction of information
+                        \begin{itemize}
+                            \item RSA fault injection\cite{pellegrini2010fault} 
+                            \item AES attack\cite{moradi2006generalized}
+                            \item DPA \cite{kocher2011introduction}
+                        \end{itemize}
+                    \item communication between different applications \cite{wang2012efficient}
                 \end{itemize}
             \item denial of service:
                 \begin{itemize}
@@ -131,6 +137,29 @@ propagate information to other cores.
                     \item livelock: introduce packets that can never reach the end so that they stay turning in the network
                 \end{itemize}
         \end{itemize}
+\end{itemize}
+
+\rule[-0.1cm]{7.5in}{0.01cm}\\
+\noindent \textbf{Tue 08 Mar 2016 02:28:51 PM EST}
+\begin{itemize}
+    \item SNI - \textit{Secure Network Interface} 
+        \begin{itemize} 
+            \item DoS
+            \item Unauthorized Read Access(Information Extraction) and unauthorized write access (Hijacking){\color{red}more literature review}
+        \end{itemize}        
+    \item bus-based control~\cite{diguet2007noc}
+        \begin{itemize}
+            \item overflow checking
+            \item path based identification
+            \item local access checking
+            \item statistics
+        \end{itemize}
+    \item secure memory access \cite{goossens2008hardwired} extending \cite{fiorin2007data}
+        \begin{itemize}
+            \item design of Data Protection Units (DPUs) managed by Network Security Manager(NSM)
+            \item memory security \cite{gebotys2003security}
+            \item anti-side channel \cite{evaluation}
+        \end{itemize} 
 \end{itemize}
 
 \begin{itemize}
