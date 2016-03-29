@@ -22,15 +22,15 @@
 \noindent \textbf{Mon 04 Jan 2016 11:14:43 AM EST}
 \textit{Beginner's tutorial of AXI slave logic design}
 
-This documents gives a brief instruction of how to design an AXI slave logic on
-Zedboard. Zedboard provides two ARM cores and programmable logic. From here, ps
-stands for GPP, ARM in this case, pl for programmable logic.\ 
+This documents gives a brief instruction of how to design an AXI slave logic on Zedboard.
+ Zedboard provides two ARM cores and programmable logic.
+ From here, ps stands for GPP, ARM in this case, pl for programmable logic.\ 
 
 Ps and Pl are connected with AXI ports. In this design, our logic talks to the
-ps with AXI ports.\ ps looks at the logic as memory blocks. More strictly, the ps
-visit the logic registers as memory units. On the ps side, I used a full linux,
-Linaro Linux as the os for ps. The programs are run on the ps interfacing the
-memory units through AXI ports, $/dev/mem$
+ps with AXI ports.\ ps looks at the logic as memory blocks. More strictly, the
+ps visit the logic registers as memory units. On the ps side, I used a full
+linux, Linaro Linux as the os for ps. The programs are run on the ps interfacing
+the memory units through AXI ports, $/dev/mem$
 
 Here are the tutorials to the design.
 \indent		\begin{itemize}
@@ -179,9 +179,29 @@ needs to secure the key exchanges on the network.
 
 
 \rule[-0.1cm]{7.5in}{0.01cm}\\
-\noindent \textbf{Mon 28 Mar 2016 10:14:30 PM EDT}
+\noindent \textbf{CSET}
 \begin{itemize}
-	\item test
+	\item metric security evaluation
+	\begin{itemize}
+		\item \textit{A Metric for the Evaluation and Comparison of Keylogger Performance}
+	\end{itemize}
+	\item testing related papers 
+	\begin{itemize}
+		\item \textit{Safe and Automated Live Malware Experimentation on Public
+		Testbenches} The paper is about testing methods for detections of
+		malware during communication. They propose containment policies for
+		testing malware by copy the observations and data gathered in malware
+		analysis and put them locally for studying. It also includes emulation
+		of testing environments.
+		\item \textit{TESTREX: a Testbed for Repeatable Exploits} This paper
+		designed a new testbed for packing and running applications with their
+		environments, injecting exploits and monitoring their success. TESTREX
+		combines the applications and their environments together for testing.
+	\end{itemize}
+	\item cyber testing training
+	\begin{itemize}
+		\item \textit{A Metric for the Evaluation and Comparison of Keylogger Performance}
+	\end{itemize}
 \end{itemize}
 
 \bibliography{week1}{}
