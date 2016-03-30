@@ -6,6 +6,7 @@
 \usepackage[margin=0.5in]{geometry}
 \usepackage{url}
 \usepackage{hyperref}
+\usepackage{graphicx}
 
 \begin{document}
 \pagestyle{empty}
@@ -219,9 +220,23 @@ needs to secure the key exchanges on the network.
 	HT designed in the TRNG of FPGA to make the random number incident
 	triggering rate rise from 0.5 to 0.75.
 	\item \textit{CHEF:A Configurable Hardware Trojan Evaluation Framework}
-
 \end{itemize}
 
+\begin{figure}
+	\centering
+	\includegraphics[width=4in]{img/defense-comparison.png}
+	\caption{defense comparison}
+\end{figure}
+
+From~\cite{ancajas2014fort,js2015runtime}
+\begin{itemize} 
+	\item DPU		~\cite{fiorin2008secure}
+	\item KeyCore	~\cite{gebotys2003framework}
+	\item surfNoC	~\cite{wassel2013surfnoc}
+	\item AE		~\cite{kapoor2013security}
+	\item IMP		~\cite{king2008designing}
+	\item NoC-MPU	~\cite{porquet2011noc}
+\end{itemize}
 \bibliography{week1}{}
 \bibliographystyle{plain}
 \end{document}

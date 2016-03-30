@@ -1,5 +1,5 @@
 include ./makefile_colors
-target :=	week1.pdf
+target := week1.pdf
 
 UNAME_S := $(shell uname -s)
 
