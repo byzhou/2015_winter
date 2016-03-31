@@ -230,12 +230,42 @@ needs to secure the key exchanges on the network.
 
 From~\cite{ancajas2014fort,js2015runtime}
 \begin{itemize} 
+	\item SNI/SCM	~\cite{diguet2007noc}
+		Secure NIs and Secure Configuration Manager(SCM): SNI act as a filter for
+	the network and handle attack symptoms that may be caused by dos attacts and
+	unauthorized r/w access. SNI verifys the packet sender The SCM configures
+	system and SNI.
 	\item DPU		~\cite{fiorin2008secure}
+		Data Protection Units, implemented within Network Interfaces, can check and
+	limit the access rights (none, read, write, or both) of processors accessing
+	data and instructions in a shared memory. The DPU can distinguish between
+	operating roles (supervisor/user and secure/nonsecure) ofthe processing
+	elements. DPU is to seperate sensitive and non-sensetive data.
 	\item KeyCore	~\cite{gebotys2003framework}
+		At the network level, each IP core has a security wrapper and a
+	key-keeper core is included in the NoC protecting encrypted private and public
+	keys. This work is to prevent untrusted software on or off onthe Noc to
+	gain access to the keys.
 	\item surfNoC	~\cite{wassel2013surfnoc}
+		For security and many other reasons, time multiplexing is widely used
+	in NoCs. It is possible to isolate data without time multiplexing in order to
+	boost performance.
 	\item AE		~\cite{kapoor2013security}
 	\item IMP		~\cite{king2008designing}
 	\item NoC-MPU	~\cite{porquet2011noc}
+\end{itemize}
+
+%Here, we can assume that routers have been compromised and inserted some
+%trojan, but we need to list what kind of HTs has been inserted. I assume that
+%there should be HTs can capture the packets on the network and extract
+%information from them. We target threats of information extraction.
+We assume that the data communication channel has been compromised.
+\begin{itemize}
+	\item \cite{lim2005extracting} illegal r/w leads to key information leakage
+	\item \cite{fiorin2008implementation,sepulveda2012hybrid,kim2009trojan} use verifications/look-up tables to prevent malicious request
+	\item \cite{sajeesh2011authenticated} encryption authorization?
+	\item \cite{fiorin2009mpsocs} internal probing
+	\item \cite{diguet2007noc} exchange secrets through covert channels
 \end{itemize}
 \bibliography{week1}{}
 \bibliographystyle{plain}
