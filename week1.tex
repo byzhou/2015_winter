@@ -294,12 +294,12 @@ We assume that the data communication channel has been compromised.
 						  	& The threat models are based monitoring  			& information extraction and hijacking. The system can be\\
 						  	& reconfiguration									& reconfigured once an attack is detected.\\
 							&													& It also proposed a routing technique: the choice of\\
-							&													& output prot is given by teh turn number in counter\\
+							&													& output port is given by teh turn number in counter\\
 							& 													& clock-clockwise from considered input port.\\
 	\hline
 	% Secure Memory Accesses on NOCs
 	\cite{fiorin2008secure} & Buffer overflow or other illegal method accessing & Network Security Manager acts as supervisor of the network.\\
-							& memeory 											& Data Protection Unit acts as the firewall of the memory.\\
+							& memeory, and snooping attacks 					& Data Protection Unit acts as the firewall of the memory.\\
 							& 													& The system prevents snooping attacks by verification\\
 							& 													& from the source processor. Snooping attacks can be done\\
 							& 													& by modifing the processor identifier.\\
@@ -307,7 +307,21 @@ We assume that the data communication channel has been compromised.
 	% SurfNoC: a new latency and provably non-interfering approach to secure networks-on-chip
 	\cite{wassel2013surfnoc}& Alternative of time-multiplexing to protect Nocs  & The paper proposes the idea of alternatively using the link\\
 							&													& so that in each cycle, the packet can be forwarded. This \\
-							&													& increases the throughput of the entire network.
+							& 													& increases the throughput of the entire network. The author\\
+							& 													& claims that once the packet has been passed on the network,\\
+							& 													& it does not need to wait due to time multiplexing.\\
+	\hline
+	% A security framework for noc using authenticated encryption and session key
+	\cite{kapoor2013security}& Extraction of important information from IP 		& \textit{related work contains attacks from one core to another}\\
+							& cores												& A seperate module distributes temporary session key for secure \\
+							&      												& and non-secured IP cores communications. The non-secure cores \\
+							&      												& use temperory session keys to communicate with secure cores so \\
+							&      												& that they can not re-use the keys to send malicious packets. \\
+	\hline
+	% NoC-MPU: a secure architecture for flexible co-hosting on shared memory MPSoCs
+	~\cite{porquet2011noc}	& Heterogeneous multiprocessor shared-memory cannot & Compared to \cite{fiorin2008secure}, the granularity of the\\
+							& use virtualization to secure the system. It needs	& access control becomes compartments. The r/w priorities are \\
+							& a seperate module like DPU.						& defined in each transaction.
 	\end{tabular}
 	\caption{test}
 \end{table}
