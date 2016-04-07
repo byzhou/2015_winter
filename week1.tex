@@ -333,12 +333,23 @@ We assume that the data communication channel has been compromised.
 	\hline
 	% Fault-based attack of RSA authentication
 	~\cite{pellegrini2010fault} & fault injection to break RSA					&\\
+	hw						&													&\\
+	\hline
+	% Exploiting Error Control Approaches for Hardware Trojans on Network-on-Chip Links
+	~\cite{yu2013exploiting}& HT induced link errors							& ECC\\
+	hw						& particle strikes, crosstalk and spurious volatge  & Flits are saved in the Go-Back-N buffer. If ECC dectects an \\
+							& fluctuation										& error, the router shuffles data and re-send them. HT here  \\
+							&													& induces errors to the system instead of information extrac-\\
+							&													& tion.\\
 	\end{tabular}
 	\caption{test}
 \end{table}
 
-
-
+\begin{itemize}
+	\item encryption key exchanges
+	\item requesting for r/w access
+	\item packet certificate	
+\end{itemize}
 
 \bibliography{week1}{}
 \bibliographystyle{plain}
