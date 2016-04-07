@@ -289,39 +289,50 @@ We assume that the data communication channel has been compromised.
 	\hline
 	% NOC-centric security of reconfigurable SoC
 	~\cite{diguet2007noc} 	& Hijacking, extraction of information and DoS  	& SNI and SNM design\\
-						  	& attacks,											& SNM monitors attacks and is in charge of configuration\\
-						  	& excluding side channel or fault injection 		& SNI distributed and dedicated defense against Dos,\\
-						  	& The threat models are based monitoring  			& information extraction and hijacking. The system can be\\
-						  	& reconfiguration									& reconfigured once an attack is detected.\\
+	sw					  	& attacks,											& SNM is in charge of SNI configuration. It monitors network.\\
+						  	& excluding side channel or fault injection 		& SNI has defense against Dos,information extraction and\\
+						  	& The threat models are based monitoring  			& hijacking. The system can be reconfigured once\\
+						  	& reconfiguration									& an attack is detected.\\
 							&													& It also proposed a routing technique: the choice of\\
-							&													& output port is given by teh turn number in counter\\
-							& 													& clock-clockwise from considered input port.\\
+							&													& output port is given by the turn number in counter\\
+							& 													& clock-clockwise from considered input port. In this way,\\
+							& 													& the receiver knows who the sender is.\\
 	\hline
 	% Secure Memory Accesses on NOCs
 	\cite{fiorin2008secure} & Buffer overflow or other illegal method accessing & Network Security Manager acts as supervisor of the network.\\
-							& memeory, and snooping attacks 					& Data Protection Unit acts as the firewall of the memory.\\
+	sw						& memeory, and snooping attacks 					& Data Protection Unit acts as the firewall of the memory.\\
 							& 													& The system prevents snooping attacks by verification\\
 							& 													& from the source processor. Snooping attacks can be done\\
 							& 													& by modifing the processor identifier.\\
 	\hline
 	% SurfNoC: a new latency and provably non-interfering approach to secure networks-on-chip
 	\cite{wassel2013surfnoc}& Alternative of time-multiplexing to protect Nocs  & The paper proposes the idea of alternatively using the link\\
-							&													& so that in each cycle, the packet can be forwarded. This \\
+	isolation				&													& so that in each cycle, the packet can be forwarded. This \\
 							& 													& increases the throughput of the entire network. The author\\
 							& 													& claims that once the packet has been passed on the network,\\
 							& 													& it does not need to wait due to time multiplexing.\\
 	\hline
 	% A security framework for noc using authenticated encryption and session key
 	\cite{kapoor2013security}& Extraction of important information from IP 		& \textit{related work contains attacks from one core to another}\\
-							& cores												& A seperate module distributes temporary session key for secure \\
+	sw						& cores												& A seperate module distributes temporary session key for secure \\
 							&      												& and non-secured IP cores communications. The non-secure cores \\
 							&      												& use temperory session keys to communicate with secure cores so \\
 							&      												& that they can not re-use the keys to send malicious packets. \\
 	\hline
 	% NoC-MPU: a secure architecture for flexible co-hosting on shared memory MPSoCs
 	~\cite{porquet2011noc}	& Heterogeneous multiprocessor shared-memory cannot & Compared to \cite{fiorin2008secure}, the granularity of the\\
-							& use virtualization to secure the system. It needs	& access control becomes compartments. The r/w priorities are \\
-							& a seperate module like DPU.						& defined in each transaction.
+	isolation				& use virtualization to secure the system. It needs	& access control becomes compartments. The r/w priorities are \\
+							& a seperate module like DPU.						& defined in each transaction.\\
+	\hline
+	% Fort-Nocs: Mitigating the Threat of a compromised Noc
+	~\cite{ancajas2014fort} & HT in router forward message to accomplice thread & Data encryption with XOR cipher encryption \\
+	sw and hw				&													& packet certificate, suppose firmware of cores have not been \\
+							& 													& tampered\\
+							&													& node obfuscation, previously done by noise injection\\
+							& 													& here, done by migration of applicaitons as a routine\\
+	\hline
+	% Fault-based attack of RSA authentication
+	~\cite{pellegrini2010fault} & fault injection to break RSA					&\\
 	\end{tabular}
 	\caption{test}
 \end{table}
