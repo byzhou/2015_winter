@@ -314,10 +314,11 @@ We assume that the data communication channel has been compromised.
 	\hline
 	% A security framework for noc using authenticated encryption and session key
 	\cite{kapoor2013security}& Extraction of important information from IP 		& \textit{related work contains attacks from one core to another}\\
-	sw						& cores												& A seperate module distributes temporary session key for secure \\
-							&      												& and non-secured IP cores communications. The non-secure cores \\
-							&      												& use temperory session keys to communicate with secure cores so \\
-							&      												& that they can not re-use the keys to send malicious packets. \\
+	sw						& cores												& A seperate module distributes temporary session key  \\
+							&      												& for secure and non-secured IP cores communications.  \\
+							&      												& The non-secure cores use temperory session keys to  \\
+							&      												& communicate with secure cores so that they can not re-use  \\
+							&													& the keys to send malicious packets.\\
 	\hline
 	% NoC-MPU: a secure architecture for flexible co-hosting on shared memory MPSoCs
 	~\cite{porquet2011noc}	& Heterogeneous multiprocessor shared-memory cannot & Compared to \cite{fiorin2008secure}, the granularity of the\\
