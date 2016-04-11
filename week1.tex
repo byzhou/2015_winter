@@ -345,7 +345,11 @@ We assume that the data communication channel has been compromised.
 	\hline
 	% Automatic ILP-based Firewall Insertion for Secure Application-specific
 	% Network-on-Chip
-	~\cite{hu2015automatic} &													&\\
+	~\cite{hu2015automatic} & The protocol SNI uses wastes too much bandwidth.  & They propose to assign different levels of securities to 	\\
+							&													& different cores. If the assigned trust level is higher than\\
+							&													& security level, there is no need to communicate headers. The \\
+							&													& assignments of security levels have done by ILP. The cost to\\
+							&													& optimize is the minimum delay of the packet delay. \\
 	
 	\end{tabular}
 	\caption{test}
