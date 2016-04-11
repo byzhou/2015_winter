@@ -320,11 +320,6 @@ We assume that the data communication channel has been compromised.
 							&      												& communicate with secure cores so that they can not re-use  \\
 							&													& the keys to send malicious packets.\\
 	\hline
-	% NoC-MPU: a secure architecture for flexible co-hosting on shared memory MPSoCs
-	~\cite{porquet2011noc}	& Heterogeneous multiprocessor shared-memory cannot & Compared to \cite{fiorin2008secure}, the granularity of the\\
-	isolation				& use virtualization to secure the system. It needs	& access control becomes compartments. The r/w priorities are \\
-							& a seperate module like DPU.						& defined in each transaction.\\
-	\hline
 	% Fort-Nocs: Mitigating the Threat of a compromised Noc
 	~\cite{ancajas2014fort} & HT in router forward message to accomplice thread & Data encryption with XOR cipher encryption \\
 	sw and hw				&													& packet certificate, suppose firmware of cores have not been \\
@@ -350,15 +345,24 @@ We assume that the data communication channel has been compromised.
 							&													& security level, there is no need to communicate headers. The \\
 							&													& assignments of security levels have done by ILP. The cost to\\
 							&													& optimize is the minimum delay of the packet delay. \\
-	
+	\hline
+	% NoC-MPU: a secure architecture for flexible co-hosting on shared memory MPSoCs
+	~\cite{porquet2011noc}	& Heterogeneous multiprocessor shared-memory cannot & Compared to \cite{fiorin2008secure}, the granularity of the\\
+	isolation				& use virtualization to secure the system. It needs	& access control becomes compartments. The r/w priorities are \\
+							& a seperate module like DPU.						& defined in each transaction. The paper propose a caching \\
+							&													& mechanism to store the recent visited security checking.\\
+	\hline
+	% Runtime Detection of a Bandwidth Denial Attack from a Rogue Network-on-Chip
+	~\cite{js2015runtime}	& Bandwidth Denial Attack							& \\
+
 	\end{tabular}
 	\caption{test}
 \end{table}
 
 \begin{itemize}
-	\item encryption key exchanges
-	\item requesting for r/w access
-	\item packet certificate	
+	\item Crossfire attack on the Nocs: HT attacks on the network.
+	\item Fort-nocs paper threat model targets information extraction, non-Dos attacks. It would be better if we can come up with some HT that
+			has Dos-attacks, although Dos attacks has been guarded by the SNI and SNM.
 \end{itemize}
 
 \bibliography{week1}{}
