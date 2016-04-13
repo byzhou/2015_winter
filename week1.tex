@@ -256,7 +256,7 @@ From~\cite{ancajas2014fort,js2015runtime}
 	communications between unsecure and secure cores use session keys.
 	\item IMP		~\cite{king2008designing}
 		Illinois Malicious Processors(IMPs) Design of malicious circuit design
-		to faciliate attacks. The paper consider two machanisms. A memory access
+		to faciliate attacks. The paper consider two machenisms. A memory access
         mechanism that provides unchecked memory accesses and allows an attacker
         to bypass the protection of the memory management unit. A shadow mode
         mechanism that allos the attackers to execute an invisible malicious
@@ -374,12 +374,26 @@ We assume that the data communication channel has been compromised.
 
 \textbf{Accelerator security}
 \begin{itemize}
+	\item ~\cite{porquet2011noc}, Noc-MPU: The granularity of the security check
+	becomes much smaller compare to \cite{fiorin2008secure}. Since there are
+	more frequent security checks, the paper proposes a caching machenism to
+	store the lookup table of entries.
 	\item ~\cite{liu2015cloning}, Cloning Your Mind: Security Challenges in
 	Cognitive System Designs and Their Solutions. The paper suggests a new
 	threat model that the attacker can obtain the training information from a
-	cognitive system. The attacker reconstruct the training data and learning
+	cognitive system. The attacker just needs to submit a large number of test
+	examples to the cognitive system and use the response to reconstruct the
+	entire model. The attacker can reconstruct the training data and learning
 	model from the input data and requested results.
-
+	\item ~\cite{xie2014crypto}, Crypto-nets: Neural networks over encrypted
+	data with High Throughput and Accuracy. Homomorphic Encryption for Neural
+	Network Computation. The NN-computation has been done by a third party,
+	thus the data has to be encrypted.
+	\item ~\cite{js2015runtime}, Runtime Detection of a Bandwidth Denial Attack
+	from a Rogue Network-on-Chip. Threat model: modification to arbitors and
+	allocators.  Solution: timestamps on every packets. A special packet is created
+	to send the packet from nodes nearby source to nodes nearby destinations. With
+	the timestamps, the NI can detect abnormal in the latencies.
 \end{itemize}
 
 \bibliography{week1}{}
