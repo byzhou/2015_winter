@@ -372,7 +372,7 @@ We assume that the data communication channel has been compromised.
 \end{itemize}
 
 
-\textbf{Accelerator security}
+\textbf{Something related to security}
 \begin{itemize}
 	\item ~\cite{porquet2011noc}, Noc-MPU: The granularity of the security check
 	becomes much smaller compare to \cite{fiorin2008secure}. Since there are
@@ -394,6 +394,11 @@ We assume that the data communication channel has been compromised.
 	allocators.  Solution: timestamps on every packets. A special packet is created
 	to send the packet from nodes nearby source to nodes nearby destinations. With
 	the timestamps, the NI can detect abnormal in the latencies.
+	\item ~\cite{wang2012efficient} Efficient Timing Channel Protection for
+	On-Chip Networks. In order to prevent applications to communicate convertly,
+	the paper proposes a priority based arbitration and a static limit machenism to
+	prevent information leaks.
+
 \end{itemize}
 
 \bibliography{week1}{}
