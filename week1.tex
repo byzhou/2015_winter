@@ -409,6 +409,15 @@ instruction issued by the processor, the defender checks the return address
 compared to the shadow stack.
 	\item ~\cite{dang2015performance} The performance cost of shadow stacks and
 stack canaries	
+	\item ~\cite{songhdfi} HDFI: Hardware-Assisted Data-flow Isolation. This
+paper is hardware implementation and compiler modification to ensure DFI(Data
+flow integrity). It implemented a memory checker for the system and if the
+return address has been modified, the checker will be modified. If this happens
+during a functional call, an exception will be thrown.
+	\item ~\cite{snow2013just}Just-In-Time Code Reuse: On the Effectiveness of
+Fine-Grained Address Space Layout Randomization. Multiple times memory
+disclosure enable adversary to iterate over mapped memory to search for all
+necesary gadgets.
 \end{itemize}
 
 \bibliography{week1}{}
