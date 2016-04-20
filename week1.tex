@@ -398,7 +398,17 @@ We assume that the data communication channel has been compromised.
 	On-Chip Networks. In order to prevent applications to communicate convertly,
 	the paper proposes a priority based arbitration and a static limit machenism to
 	prevent information leaks.
+\end{itemize}
 
+\textbf{Something related to ROP}
+\begin{itemize}
+	\item ~\cite{davi2011ropdefender} ROPdefender: A Detection Tool to Defend
+Against Return-Oriented Programming Attacks. The paper proposes a shadow stack
+to store the return address once a function is called. When there is an return
+instruction issued by the processor, the defender checks the return address
+compared to the shadow stack.
+	\item ~\cite{dang2015performance} The performance cost of shadow stacks and
+stack canaries	
 \end{itemize}
 
 \bibliography{week1}{}
