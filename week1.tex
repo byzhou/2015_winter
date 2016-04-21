@@ -399,7 +399,7 @@ We assume that the data communication channel has been compromised.
 	the paper proposes a priority based arbitration and a static limit machenism to
 	prevent information leaks.
 \end{itemize}
-
+\newpage
 \textbf{Something related to ROP}
 \begin{itemize}
 	\item ~\cite{davi2011ropdefender} ROPdefender: A Detection Tool to Defend
@@ -408,7 +408,9 @@ to store the return address once a function is called. When there is an return
 instruction issued by the processor, the defender checks the return address
 compared to the shadow stack.
 	\item ~\cite{dang2015performance} The performance cost of shadow stacks and
-stack canaries	
+stack canaries. This paper use parallel shadow stack to lower the overhead of
+shadow stacks. The main idea is to place the shadow stack at a fixed offset from
+the main stack, avoiding maintaining the pointer to the shadow stack.
 	\item ~\cite{songhdfi} HDFI: Hardware-Assisted Data-flow Isolation. This
 paper is hardware implementation and compiler modification to ensure DFI(Data
 flow integrity). It implemented a memory checker for the system and if the
