@@ -424,7 +424,24 @@ is one related-work of randomization of all instructions in the memory, which
 has been done in hardware.
 \end{itemize}
 \textbf{Something related to anormaly detection}
-\item Unsupervised Anomaly-based Malware Detection using Hardware Features
+\begin{itemize}
+	\item Unsupervised Anomaly-based Malware Detection using Hardware Features
+	The paper also use the HPC to gathering data. This paper commutes the
+	distinguishable feature of malicious codes, which in this case, the authors
+	gives an example of ROP. There are certain parts of code repeatedly appear
+	in the instruction, thus the author use this information as a feature in the
+	detection.
+	\item Are Hardware Performance Counters a Cost Effective Way
+	for Integrity Checking of Programs? In this paper, a few things has
+		mentioned. Control flow errors can be detected if signature instruction
+		stream has been implemented. A non-cryptographic hash of the instruction
+		can be compared during the runtime. The paper propose to use the HPC,
+		hardware performance counters to check the integrity of the program. The
+		checker verifies not only the locations of the data but also the DTLB
+		miss from performance counter. The paper use performance counters to
+		build a model to check whether the program ahs been modified or not
+		during the runtime.
+\end{itemize}
 
 \bibliography{week1}{}
 \bibliographystyle{plain}
