@@ -427,7 +427,7 @@ has been done in hardware.
 \begin{itemize}
 	\item Unsupervised Anomaly-based Malware Detection using Hardware Features
 	The paper also use the HPC to gathering data. This paper keeps track of
-	architectural and mircroarchitectural events in Table. The monitor can keep
+	architectural and mircroarchitectural events in Table~\ref{tab:events}. The monitor can keep
 	track of at most 4 events. Features are the 4 most occured events. The
 	program has been sliced into different stages. In each stage, the program
 	has a distinguishable feature vector.
@@ -440,10 +440,6 @@ has been done in hardware.
 	only the locations of the data but also the DTLB miss from performance
 	counter.  The paper use performance counters to build a model to check
 	whether the program ahs been modified or not during the runtime.
-	\item Malware-aware processors: A framework for efficient online malware
-	detection
-	This paper claims that software detector has a much lower sampling rate than
-	hardware detector. 
 	\item On the Feasibility of Online Malware Detection with
 	Performance Counters(ISCA 13)
 	This paper still uses the data from hardware performance counters. Feature
@@ -451,13 +447,86 @@ has been done in hardware.
 	aggregations between context swaps 4) historgrams in intervals of execution
 	classifiers they use are decision tree, K-nearest neighbor, artificial
 	neural networks.
+	\item Malware-aware processors: A framework for efficient online malware
+	detection
+	This paper claims that software detector has a much lower sampling rate than
+	hardware detector. The paper implemented classifier in hardware to
+	faciliate the classification with feature vectors from HPC. The features
+	are architecture events, memory related features, and instruction related
+	features. Memory features such as statistics of reads and writes.
+Instruction related features are frequencies of using certain opcodes.
 \end{itemize}
 
 \begin{figure}
 	\centering
 	\includegraphics[width=4in]{img/tracking_events.png}
 	\caption{shortlisted candidate events to be monitored}
+	\label{tab:events}
 \end{figure}
+\newpage
+\begin{itemize}
+	\item cpu-cycles OR cycles                               [Hardware event]
+  	\item instructions                                       [Hardware event]
+  	\item cache-references                                   [Hardware event]
+  	\item cache-misses                                       [Hardware event]
+  	\item branch-instructions OR branches                    [Hardware event]
+  	\item branch-misses                                      [Hardware event]
+  	\item bus-cycles                                         [Hardware event]
+  	\item ref-cycles                                         [Hardware event]
+  	\item cpu-clock                                          [Software event]
+  	\item task-clock                                         [Software event]
+  	\item page-faults OR faults                              [Software event]
+  	\item context-switches OR cs                             [Software event]
+  	\item cpu-migrations OR migrations                       [Software event]
+  	\item minor-faults                                       [Software event]
+  	\item major-faults                                       [Software event]
+  	\item alignment-faults                                   [Software event]
+  	\item emulation-faults                                   [Software event]
+  	\item dummy                                              [Software event]
+  	\item L1-dcache-loads                                    [Hardware cache event]
+  	\item L1-dcache-load-misses                              [Hardware cache event]
+  	\item L1-dcache-stores                                   [Hardware cache event]
+  	\item L1-dcache-store-misses                             [Hardware cache event]
+  	\item L1-dcache-prefetch-misses                          [Hardware cache event]
+  	\item L1-icache-load-misses                              [Hardware cache event]
+  	\item LLC-loads                                          [Hardware cache event]
+  	\item LLC-stores                                         [Hardware cache event]
+  	\item LLC-prefetches                                     [Hardware cache event]
+  	\item dTLB-loads                                         [Hardware cache event]
+  	\item dTLB-load-misses                                   [Hardware cache event]
+  	\item dTLB-stores                                        [Hardware cache event]
+  	\item dTLB-store-misses                                  [Hardware cache event]
+  	\item iTLB-loads                                         [Hardware cache event]
+  	\item iTLB-load-misses                                   [Hardware cache event]
+  	\item branch-loads                                       [Hardware cache event]
+  	\item branch-load-misses                                 [Hardware cache event]
+  	\item branch-instructions OR cpu/branch-instructions/    [Kernel PMU event]
+  	\item branch-misses OR cpu/branch-misses/                [Kernel PMU event]
+  	\item bus-cycles OR cpu/bus-cycles/                      [Kernel PMU event]
+  	\item cache-misses OR cpu/cache-misses/                  [Kernel PMU event]
+  	\item cache-references OR cpu/cache-references/          [Kernel PMU event]
+  	\item cpu-cycles OR cpu/cpu-cycles/                      [Kernel PMU event]
+  	\item cycles-ct OR cpu/cycles-ct/                        [Kernel PMU event]
+  	\item cycles-t OR cpu/cycles-t/                          [Kernel PMU event]
+  	\item el-abort OR cpu/el-abort/                          [Kernel PMU event]
+  	\item el-capacity OR cpu/el-capacity/                    [Kernel PMU event]
+  	\item el-commit OR cpu/el-commit/                        [Kernel PMU event]
+  	\item el-conflict OR cpu/el-conflict/                    [Kernel PMU event]
+  	\item el-start OR cpu/el-start/                          [Kernel PMU event]
+  	\item instructions OR cpu/instructions/                  [Kernel PMU event]
+  	\item mem-loads OR cpu/mem-loads/                        [Kernel PMU event]
+  	\item mem-stores OR cpu/mem-stores/                      [Kernel PMU event]
+  	\item ref-cycles OR cpu/ref-cycles/                      [Kernel PMU event]
+  	\item tx-abort OR cpu/tx-abort/                          [Kernel PMU event]
+  	\item tx-capacity OR cpu/tx-capacity/                    [Kernel PMU event]
+  	\item tx-commit OR cpu/tx-commit/                        [Kernel PMU event]
+  	\item tx-conflict OR cpu/tx-conflict/                    [Kernel PMU event]
+  	\item tx-start OR cpu/tx-start/                          [Kernel PMU event]
+  	\item rNNN                                               [Raw hardware event descriptor]
+  	\item cpu/t1=v1[,t2=v2,t3 ...]/modifier                  [Raw hardware event descriptor]
+\end{itemize}
+
+
 
 
 \bibliography{week1}{}
